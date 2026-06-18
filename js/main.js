@@ -97,15 +97,37 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Contact form (front-end only demo handler)
+// Contact form — sends the message straight to WhatsApp
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contactForm");
   if (!form) return;
+
+  // WhatsApp number in international format (no +, spaces or dashes)
+  const WHATSAPP_NUMBER = "919419212533";
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
     const note = document.getElementById("formNote");
-    const name = (form.querySelector("[name=name]") || {}).value || "there";
-    note.textContent = "Thanks, " + name + "! Your message is ready — this demo doesn't send email yet. Connect a form service (Formspree, Getform) or wire your own backend.";
+    const name = (form.querySelector("[name=name]").value || "").trim();
+    const email = (form.querySelector("[name=email]").value || "").trim();
+    const message = (form.querySelector("[name=message]").value || "").trim();
+
+    const text =
+      "Hi Stanzin, I'm reaching out from your portfolio.\n\n" +
+      "Name: " + name + "\n" +
+      "Email: " + email + "\n\n" +
+      "Message:\n" + message;
+
+    const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(text);
+    window.open(url, "_blank", "noopener,noreferrer");
+
+    note.textContent = "Thanks, " + name + "! Opening WhatsApp so you can send your message directly.";
     note.style.color = "var(--accent-2)";
     form.reset();
   });
