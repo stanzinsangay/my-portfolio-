@@ -16,15 +16,15 @@
 }
 
 :root[data-theme="light"] {
-  --bg: #f6f8fc;
-  --bg-soft: #ffffff;
-  --card: #ffffff;
-  --border: #e3e8f0;
+  --bg: #dfe4ed;
+  --bg-soft: #eef1f7;
+  --card: #f3f5fa;
+  --border: #cfd6e3;
   --text: #1b2230;
   --text-dim: #5a647a;
   --accent: #3b5bff;
   --accent-2: #0bb89a;
-  --shadow: 0 10px 30px rgba(20, 30, 60, 0.10);
+  --shadow: 0 10px 30px rgba(20, 30, 60, 0.12);
 }
 
 * { box-sizing: border-box; }
