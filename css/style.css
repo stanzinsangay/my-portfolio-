@@ -318,7 +318,9 @@ section { padding: 80px 0; }
   border: 1px solid var(--border);
   display: grid; place-items: center;
   font-size: 1.2rem;
+  color: var(--accent);
 }
+.contact-list .ico svg { width: 22px; height: 22px; display: block; }
 .socials { display: flex; gap: 12px; margin-top: 22px; }
 .socials a {
   width: 46px; height: 46px;
