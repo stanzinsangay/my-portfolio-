@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Stanzin Sangay</title>
+  <meta name="description" content="Get in touch with Stanzin Sangay." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand"><span class="dot"></span> Stanzin Sangay</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <p class="eyebrow reveal">Contact</p>
+      <h2 class="section-title reveal">Let's talk</h2>
+      <p class="section-sub reveal">Got a question, a project, or just want to say hi? Drop me a message and I'll get back to you.</p>
+
+      <div class="contact-grid">
+        <!-- Form -->
+        <form id="contactForm" class="reveal" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message →</button>
+          <p class="form-note" id="formNote">Prefer email? Reach me directly at the address on the right.</p>
+        </form>
+
+        <!-- Info -->
+        <div class="reveal">
+          <ul class="contact-list">
+            <li>
+              <span class="ico">✉️</span>
+              <div><strong>Email</strong><br /><a href="mailto:stanzin@example.com">stanzin@example.com</a></div>
+            </li>
+            <li>
+              <span class="ico">📍</span>
+              <div><strong>Location</strong><br />India</div>
+            </li>
+            <li>
+              <span class="ico">💼</span>
+              <div><strong>Availability</strong><br />Open to opportunities</div>
+            </li>
+          </ul>
+
+          <h4 style="margin:24px 0 4px;">Find me online</h4>
+          <div class="socials">
+            <a href="#" title="GitHub" aria-label="GitHub">GH</a>
+            <a href="#" title="LinkedIn" aria-label="LinkedIn">in</a>
+            <a href="#" title="Twitter / X" aria-label="Twitter">X</a>
+            <a href="#" title="Instagram" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Stanzin Sangay. All rights reserved.</span>
+      <span><a href="index.html">Back to home →</a></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

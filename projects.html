@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Stanzin Sangay</title>
+  <meta name="description" content="Projects by Stanzin Sangay." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand"><span class="dot"></span> Stanzin Sangay</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <p class="eyebrow reveal">Portfolio</p>
+      <h2 class="section-title reveal">My projects</h2>
+      <p class="section-sub reveal">A collection of things I've designed and built. Use the filters to browse by category.</p>
+
+      <!-- Filters -->
+      <div class="filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="app">Apps</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+
+      <!-- Project grid -->
+      <div class="grid grid-3">
+        <article class="card reveal" data-category="web">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#6c8cff,#54e6c1);">01</div>
+          <h3>Personal Blog</h3>
+          <p>A fast, responsive blog built from scratch with semantic HTML and modern CSS.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+          <div class="project-links"><a href="#">Live →</a><a href="#">Code →</a></div>
+        </article>
+
+        <article class="card reveal" data-category="app">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#ff8a65,#ff5fa2);">02</div>
+          <h3>Task Manager App</h3>
+          <p>A productivity app to create, organize, and track tasks with local storage.</p>
+          <div class="tags"><span class="tag">React</span><span class="tag">State</span></div>
+          <div class="project-links"><a href="#">Live →</a><a href="#">Code →</a></div>
+        </article>
+
+        <article class="card reveal" data-category="design">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#a78bfa,#6c8cff);">03</div>
+          <h3>Mobile UI Kit</h3>
+          <p>A clean set of UI components and screens designed in Figma.</p>
+          <div class="tags"><span class="tag">Figma</span><span class="tag">UI</span></div>
+          <div class="project-links"><a href="#">View →</a></div>
+        </article>
+
+        <article class="card reveal" data-category="web">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#34d399,#10b981);">04</div>
+          <h3>Landing Page</h3>
+          <p>A high-converting marketing landing page with smooth scroll animations.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+          <div class="project-links"><a href="#">Live →</a><a href="#">Code →</a></div>
+        </article>
+
+        <article class="card reveal" data-category="app">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#f59e0b,#ef4444);">05</div>
+          <h3>Weather Dashboard</h3>
+          <p>Real-time weather app consuming a public API with a clean dashboard.</p>
+          <div class="tags"><span class="tag">JS</span><span class="tag">API</span></div>
+          <div class="project-links"><a href="#">Live →</a><a href="#">Code →</a></div>
+        </article>
+
+        <article class="card reveal" data-category="design">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#06b6d4,#3b82f6);">06</div>
+          <h3>Brand Identity</h3>
+          <p>Logo, color palette, and style guide for a small business.</p>
+          <div class="tags"><span class="tag">Branding</span><span class="tag">Design</span></div>
+          <div class="project-links"><a href="#">View →</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Want to see more?</h2>
+        <p>Check out my GitHub or reach out for a full walkthrough.</p>
+        <a href="contact.html" class="btn btn-ghost">Contact me</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Stanzin Sangay. All rights reserved.</span>
+      <span><a href="about.html">More about me →</a></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
